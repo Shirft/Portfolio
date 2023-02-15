@@ -1,0 +1,53 @@
+header{
+    background-color: black;
+    color: azure;
+    font-weight: 500;
+    font-size: large;
+}
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.container ul{
+    display: flex;
+    margin-right: 2%;
+}
+.container .img{
+    margin: 0.5% 0 0.5% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container .img .loader{
+    width: 60px;
+    height: 60px;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
+    border-top-color: transparent;
+    animation: spin 1.2s
+        linear infinite;
+    margin-right: 40px;
+}
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.container li{
+    list-style-type: none;
+    margin:0 0 0 100px;
+}
+.container a{
+    text-decoration: none;
+    color: white;
+    padding: 50px;
+    font-weight: 500;
+    font-size: large;
+}
+.container li:hover{
+    text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
+}
