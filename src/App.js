@@ -1,10 +1,10 @@
 import "./App.css";
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
-import Projects from "./components/Projects/Projects";
-import Home from "./components/Home/Home";
-import Contact from "./components/Contact/Contact";
-import Aboutme from "./components/Aboutme/Aboutme";
+import Projects from "./pages/Projects/Projects";
+import Home from "./pages/Home/Home";
+import Contact from "./pages/Contact/Contact";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
@@ -17,7 +17,6 @@ function App() {
         </header>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about-me" element={<Aboutme />} />
           <Route path="/projects" element={<Projects/>}/>
           <Route path="/contact" element={<Contact />} />
         </Routes>

@@ -1,0 +1,25 @@
+.projects{
+    min-height: 100vh;
+}
+.projects-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+.projects-project{
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-project a{
+    text-decoration: none;
+    color:gray;
+    text-align: start;
+}
+.projects-project a:hover{
+    color: white;
+    text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red, 0 0 80px red;
+}
+.projects-project a:active{
+    color:gray;
+    text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
+}

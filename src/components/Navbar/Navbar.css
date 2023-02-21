@@ -1,8 +1,11 @@
 header{
     background-color: black;
-    color: azure;
+    color: white;
     font-weight: 500;
     font-size: large;
+    border-radius: 10px;
+    animation-duration: 1s;
+    animation-name: slide;
 }
 .container{
     display: flex;
@@ -10,12 +13,22 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+@keyframes slide{
+    from{
+        margin-right: 100%;
+
+    }
+    to{
+        margin-right: 0%;
+    }
+}
 .container ul{
     display: flex;
     margin-right: 2%;
+    align-items: center;
 }
 .container .img{
-    margin: 0.5% 0 0.5% 2%;
+    margin: 1% 0 1% 4.5%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -27,6 +40,7 @@ header{
     border-radius: 50%;
     box-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
     border-top-color: transparent;
+    border-right-color: transparent;
     animation: spin 1.2s
         linear infinite;
     margin-right: 40px;
@@ -43,11 +57,26 @@ header{
 }
 .container a{
     text-decoration: none;
-    color: white;
+    color: gray;
     padding: 50px;
     font-weight: 500;
-    font-size: large;
+    font-size: 20px;
+    font-family: monospace;
 }
-.container li:hover{
+.container li a:hover{
+    text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red, 0 0 80px red;
+    color: white;
+}
+.container li a:active{
     text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
+    color: gray;
+}
+.active{
+    text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red, 0 0 80px red;
+}
+.inactive{
+    color: gray;
+}
+.nombre{
+    font-family: "Jost", sans-serif;
 }

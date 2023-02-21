@@ -2,13 +2,26 @@
   text-align: center;
   color: aliceblue;
 }
+
 body {
-  /* background-color: gray;*/
-  background-image: url("/public/images/programacion.jpg");
+ /* background-image: url("/public/images/programacion.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
+  background-color: black;
+  min-height: 100vh;
+  margin: 0;
+}
+body::-webkit-scrollbar {
+  width: 15px;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgb(58, 56, 56);
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: black;
 }
 /*
 .App-header {
