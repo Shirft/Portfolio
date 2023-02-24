@@ -1,0 +1,10 @@
+#Contact{
+    padding: 0 40%;
+}
+.form-mail{
+    display: flex;
+    flex-direction: column;
+}
+.form-mail input{
+    margin: 0 20%;
+}

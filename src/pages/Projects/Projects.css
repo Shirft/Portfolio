@@ -1,6 +1,10 @@
 .projects{
     min-height: 100vh;
 }
+.projects h1{
+    padding: 0 0 1% 0;
+    font-family: "Jost", sans-serif;
+}
 .projects-list{
     display: flex;
     justify-content: space-evenly;
@@ -8,12 +12,26 @@
 .projects-project{
     display: flex;
     flex-direction: column;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 10px;
+    width: 15%;
+}
+.projects-project h3{
+    font-family: "Jost", sans-serif;
+}
+.projects-project:hover{
+    box-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
+    transition: 0.3s;
 }
 
 .projects-project a{
     text-decoration: none;
     color:gray;
     text-align: start;
+    padding: 0 0 5% 10%;
+    font-family: monospace;
+    font-size: large;
 }
 .projects-project a:hover{
     color: white;

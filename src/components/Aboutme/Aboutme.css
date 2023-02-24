@@ -1,34 +1,43 @@
-#Aboutme {
+#Aboutme{
+    padding: 2% 15%;
+}
+.about-section {
   width: 100%;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  justify-content: start;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
+  
 }
-.about-texto h1{
-    font-family: "Jost", sans-serif;
+.about-texto h1 {
+  font-family: "Jost", sans-serif;
 }
-.about-texto p{
-    font-family: monospace;
-    text-align: start;
-    padding: 0 20% 0;
-    font-size: 20px;
+.about-texto p {
+  font-family: monospace;
+  text-align: start;
+  padding: 0 20% 0;
+  font-size: 20px;
 }
-.about-mention{
-    font-family: monospace;
-    font-size: 20px;
+.about-mention {
+  font-family: monospace;
+  font-size: 20px;
 }
-.about-iconos{
-    display: flex;
-    align-items: end;
-    margin-left: 15%;
-    margin-right: 18%;
-    font-family: monospace;
-    font-size: 15px;
+.about-iconos {
+  display: flex;
+  align-items: end;
+  margin-left: 15%;
+  margin-right: 18%;
+  font-family: monospace;
+  font-size: 15px;
 }
-.about-icono{
-    list-style-type: none;
+.about-icono {
+  list-style-type: none;
 }
-.about-iconos img{
-    width: 13%;
+.about-iconos img {
+  width: 13%;
 }

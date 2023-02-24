@@ -6,7 +6,6 @@ import Typewriter from "typewriter-effect";
 import TypeWriterEffect from "react-typewriter-effect";
 
 const Home = () => {
-  const id = "Aboutme";
   const [state] = useState({
     name: "Hi there, I'm Miguel",
     cargo: "Developer",
@@ -60,7 +59,6 @@ const Home = () => {
                 delay: 60,
                 strings: [
                   "Front-end Developer",
-                  "Technical support",
                   "Student",
                 ],
               }}
@@ -68,7 +66,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Aboutme identificacion={id} />
     </div>
   );
 };
