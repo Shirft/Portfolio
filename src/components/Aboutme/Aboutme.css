@@ -1,5 +1,6 @@
 #Aboutme{
-    padding: 2% 15%;
+    padding: 10% 15%;
+    min-height: 80vh;
 }
 .about-section {
   width: 100%;

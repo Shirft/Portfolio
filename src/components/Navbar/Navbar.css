@@ -26,6 +26,7 @@ header{
     display: flex;
     margin-right: 2%;
     align-items: center;
+    transition: top 0.3s; 
 }
 .container .img{
     margin: 1% 0 1% 4.5%;
@@ -36,7 +37,7 @@ header{
 .container .img .loader{
     width: 60px;
     height: 60px;
-    border: 3px solid white;
+    border: 2px solid white;
     border-radius: 50%;
     box-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
     border-top-color: transparent;
@@ -70,13 +71,13 @@ header{
 .container li a:active{
     text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
     color: gray;
-}
+}/*
 .active{
     text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red, 0 0 80px red;
 }
 .inactive{
     color: gray;
-}
+}*/
 .nombre{
     font-family: "Jost", sans-serif;
 }

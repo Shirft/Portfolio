@@ -2,7 +2,13 @@
   text-align: center;
   color: aliceblue;
 }
-
+.App-header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  transition: top 0.3s; 
+}
 body {
  /* background-image: url("/public/images/programacion.jpg");
   background-position: center;
@@ -14,7 +20,7 @@ body {
   margin: 0;
 }
 body::-webkit-scrollbar {
-  width: 15px;
+  width: 8px;
 }
 body::-webkit-scrollbar-thumb {
   background: rgb(58, 56, 56);

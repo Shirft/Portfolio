@@ -1,7 +1,10 @@
 import "./Home.css";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { useState } from "react";
 import Aboutme from "../../components/Aboutme/Aboutme";
+import Contact from "../Contact/Contact";
+import Projects from "../Projects/Projects";
 import Typewriter from "typewriter-effect";
 import TypeWriterEffect from "react-typewriter-effect";
 
@@ -13,9 +16,10 @@ const Home = () => {
       "I'm front-end developer passionate about maintenance and development of new technologies",
   });
 
+
   return (
     <div className="home">
-      <div className="home-all">
+      <div className="home-all" id="Home">
         <div className="home-container">
           <div className="home-dev">
             <div className="home-name">{state.name}</div>
@@ -65,6 +69,15 @@ const Home = () => {
             />
           </div>
         </div>
+      </div>
+      <Aboutme/>
+      <Projects/>
+      <Contact/>
+      <div className="home-flecha">
+        <Link to="/" >
+        <img alt="volver al inicio" src="./images/flecha-hacia-arriba.png"/>
+          </Link> 
+        
       </div>
     </div>
   );

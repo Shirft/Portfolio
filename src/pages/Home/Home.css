@@ -1,3 +1,6 @@
+.home{
+  margin-top: 90px;
+}
 .home-all {
   background-color: black;
   width: 100%;
@@ -99,4 +102,28 @@
   font-weight: 500;
   font-size: 50px;
   font-family: monospace;
+}
+
+.home-flecha img{
+  background-color: gray;
+  width: 2%;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  position: fixed;
+  top: 90%;
+  right: 3%;
+  z-index: 2;
+}
+
+.home-flecha img:hover{
+  background-color: white;
+  border-color: white;
+  box-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red;
+}
+
+.home-flecha img:active{
+  background-color: gray;
+  border-color: gray;
+  box-shadow: 0 0 5px red, 0 0 15px red;
 }

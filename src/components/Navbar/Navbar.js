@@ -1,35 +1,33 @@
-import { NavLink } from "react-router-dom";
-import './Navbar.css';
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <nav className="container">
-        <ul>
+      <ul>
         <li>
-            <NavLink to="/">
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/Aboutme">
-              About me
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/projects">
-              Projects
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">
-              Contact
-            </NavLink>
-          </li>
-        </ul>
-        <div className="img">
-          <div className="loader"></div>
-          {/*<div className="nombre">Miguel Hilser</div>*/}
-        </div>
+          <HashLink smooth to="/#Aboutme">
+            About me
+          </HashLink>
+        </li>
+        <li>
+          <HashLink smooth to="/#Projects">
+            Projects
+          </HashLink>
+        </li>
+        <li>
+          <HashLink smooth to="/#Contact">
+            Contact
+          </HashLink>
+        </li>
+        <li>
+          <Link to="/">Cv</Link>
+        </li>
+      </ul>
+      <div className="img">
+        <div className="loader"></div>
+      </div>
     </nav>
   );
 };

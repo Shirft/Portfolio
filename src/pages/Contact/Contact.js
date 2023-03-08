@@ -14,29 +14,14 @@ const Contact = () => {
         event.target,
         "vrLRYebfXfNhuRbUN"
       )
-      /*.then((response) => {
-        console.log(response);
-        if (response.status == 200) {
-          toast.success("Email sent!", {
-            position: toast.POSITION.BOTTOM_CENTER,
-            className: "foo-bar",
-            theme: "colored",
-            autoClose: 1000,
-          });
-          event.target.reset();
-        }
-      })*/
       .then((response) => {
         console.log(response);
         event.target.reset();
       })
       .catch((error) => {
         console.log(error);
-        /*toast.error("Email not sent!", {
-          position: toast.POSITION.BOTTOM_CENTER,
-          theme: "colored",
-        });*/
       });
+      
     toast.promise(email, {
       pending: {
         render(){

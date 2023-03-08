@@ -1,7 +1,8 @@
-.projects{
-    min-height: 100vh;
+#Projects{
+    min-height: 80vh;
+    padding: 5% 0;
 }
-.projects h1{
+#Projects h1{
     padding: 0 0 1% 0;
     font-family: "Jost", sans-serif;
 }

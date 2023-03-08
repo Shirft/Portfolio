@@ -1,5 +1,6 @@
 #Contact{
     padding: 0 40%;
+    min-height: 80vh;
 }
 .contact-title-form{
     font-family: "Jost", sans-serif;
@@ -34,4 +35,7 @@
 }
 .form-mail button:hover{
     box-shadow: 0 0 5px red, 0 0 15px red;
+}
+.form-mail button:active{
+    box-shadow: 0 0 5px red;
 }
