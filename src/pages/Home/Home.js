@@ -16,7 +16,23 @@ const Home = () => {
       "I'm front-end developer passionate about maintenance and development of new technologies",
   });
 
+  const scrol = () => {
+    window.scroll({
+      //top: 962,
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+/*
+  const none = () => {
+    const diplayBlock={
+      display: 'block';
+    };
+    if(document.documentElement.scrollTop>961){
 
+    } 
+  };
+*/
   return (
     <div className="home">
       <div className="home-all" id="Home">
@@ -27,9 +43,7 @@ const Home = () => {
             <TypeWriterEffect
               startDelay={1}
               cursorColor="white"
-              multiText={[
-                `${state.description}`,
-              ]}
+              multiText={[`${state.description}`]}
               typeSpeed={40}
             />
           </div>
@@ -61,23 +75,19 @@ const Home = () => {
                 autoStart: true,
                 loop: true,
                 delay: 60,
-                strings: [
-                  "Front-end Developer",
-                  "Student",
-                ],
+                strings: ["Front-end Developer", "Student"],
               }}
             />
           </div>
         </div>
       </div>
-      <Aboutme/>
-      <Projects/>
-      <Contact/>
-      <div className="home-flecha">
-        <Link to="/" >
-        <img alt="volver al inicio" src="./images/flecha-hacia-arriba.png"/>
-          </Link> 
-        
+      <Aboutme />
+      <Projects />
+      <Contact />
+      <div className="home-flecha" >
+        <Link to="/" onClick={scrol}>
+          <img alt="volver al inicio" src="./images/flecha-hacia-arriba.png" />
+        </Link>
       </div>
     </div>
   );
