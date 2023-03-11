@@ -8,18 +8,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  min-height: 90vh;
-  animation-duration: 1s;
-  animation-name: slidein;
+  min-height: 70vh;
+  padding: 0 0 10% 0;
 }
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-  }
-  to {
-    margin-left: 0%;
-  }
-}
+
 /*-------------------------- cara izquierda----------------------*/
 .home-dev {
   font-size: 100px;
@@ -53,6 +45,7 @@
   box-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
   background-color: white;
   border-color: white;
+  transition: 0.3s;
 }
 .home-redes > a > img:active{
   box-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red;
@@ -104,6 +97,7 @@
   font-family: monospace;
 }
 
+/*-------------------------- flecha nav top----------------------*/
 .home-flecha img{
   background-color: gray;
   width: 2%;
@@ -120,10 +114,58 @@
   background-color: white;
   border-color: white;
   box-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red;
+  transition: 0.3s;
 }
 
 .home-flecha img:active{
   background-color: gray;
   border-color: gray;
   box-shadow: 0 0 5px red, 0 0 15px red;
+}
+/*-------------------------- footer----------------------*/
+.home-footer {
+  padding: 0 0 0.5% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-footer img {
+  background-color: gray;
+  width: 1.5%;
+  border-radius: 50%;
+  border-style: double;
+  border-width: 1px;
+  border-color: gray;
+  margin: 2% 10px 0 0;
+}
+.home-footer-redes{
+  padding-left: 0.4%;
+}
+.home-footer-redes > a > img:hover {
+  box-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
+  background-color: white;
+  border-color: white;
+  transition: 0.5s;
+}
+.home-footer-redes > a > img:active{
+  box-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red;
+  background-color: gray;
+  border-color: gray;
+}
+.home-footer-text{
+  font-size: 90%;
+  font-family: monospace;
+}
+.home-footer-text a{
+  text-decoration: none;
+  color: gray;
+}
+.home-footer-text a:hover{
+  text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red;
+  color: white;
+  transition: 0.5s;
+}
+.home-footer-text a:active{
+  text-shadow: 0 0 5px red, 0 0 15px red;
+  color: gray;
 }

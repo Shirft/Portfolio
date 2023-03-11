@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Projects.css";
-import FolderIcon from '@mui/icons-material/Folder';
+import FolderIcon from "@mui/icons-material/Folder";
+import { Fade } from "@ericcote/react-reveal";
 
 const Projects = () => {
   const [project, setProject] = useState([]);
@@ -34,19 +35,29 @@ const Projects = () => {
   }, []);
 
   return (
-    <div id="Projects">
-      <h1>Projects</h1>
-      <div className="projects-list">
-        {project.map((pro) => (
-          <div key={pro.id} className="projects-project">
-            <h3>{pro.name}</h3>
-            <FolderIcon sx={{ fontSize: 120, color:'red', paddingLeft:10 }}/>
-            <Link to={pro.github} target="_blank">Git-Hub</Link>
-            <Link to={pro.web} target="_blank">Website</Link>
-          </div>
-        ))}
+    <Fade bottom cascade>
+      <div id="Projects">
+        <h1>Projects</h1>
+        <div className="projects-list">
+          {project.map((pro) => (
+            <Fade bottom cascade key={pro.id}>
+              <div className="projects-project">
+                <h3>{pro.name}</h3>
+                <FolderIcon
+                  sx={{ fontSize: 120, color: "red", paddingLeft: 10 }}
+                />
+                <Link to={pro.github} target="_blank">
+                  Git-Hub
+                </Link>
+                <Link to={pro.web} target="_blank">
+                  Website
+                </Link>
+              </div>
+            </Fade>
+          ))}
+        </div>
       </div>
-    </div>
+    </Fade>
   );
 };
 

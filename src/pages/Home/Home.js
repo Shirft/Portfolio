@@ -1,12 +1,12 @@
 import "./Home.css";
 import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import { useState } from "react";
-import Aboutme from "../../components/Aboutme/Aboutme";
+import Aboutme from "../Aboutme/Aboutme";
 import Contact from "../Contact/Contact";
 import Projects from "../Projects/Projects";
 import Typewriter from "typewriter-effect";
 import TypeWriterEffect from "react-typewriter-effect";
+import { Fade } from "@ericcote/react-reveal";
 
 const Home = () => {
   const [state] = useState({
@@ -23,18 +23,10 @@ const Home = () => {
       behavior: "smooth",
     });
   };
-/*
-  const none = () => {
-    const diplayBlock={
-      display: 'block';
-    };
-    if(document.documentElement.scrollTop>961){
 
-    } 
-  };
-*/
   return (
     <div className="home">
+      <Fade right>
       <div className="home-all" id="Home">
         <div className="home-container">
           <div className="home-dev">
@@ -48,21 +40,22 @@ const Home = () => {
             />
           </div>
           <div className="home-redes">
-            <Link
-              to="https://www.linkedin.com/in/miguel-hilser-39b106122"
-              target="_blank"
-            >
-              <img alt="linkdin" src="./images/linkedin.png" />
-            </Link>
-            <Link to="https://github.com/Shirft" target="_blank">
-              <img alt="git-hub" src="./images/github.png" />
-            </Link>
-            <Link to="https://wa.me/1132933986" target="_blank">
-              <img alt="whatsapp" src="./images/whatsapp.png" />
-            </Link>
-            <Link to="https://t.me/MiguelHilser" target="_blank">
-              <img alt="telegram" src="./images/telegrama.png" />
-            </Link>
+          <Link
+            to="https://www.linkedin.com/in/miguel-hilser-39b106122"
+            target="_blank"
+            title="Linkdin"
+          >
+            <img alt="linkdin" src="./images/linkedin.png" />
+          </Link>
+          <Link to="https://github.com/Shirft" target="_blank" title="Git-hub">
+            <img alt="Git-hub" src="./images/github.png" />
+          </Link>
+          <Link to="https://wa.me/1132933986" target="_blank" title="Whatsapp">
+            <img alt="whatsapp" src="./images/whatsapp.png" />
+          </Link>
+          <Link to="https://t.me/MiguelHilser" target="_blank" title="Telegram">
+            <img alt="Telegram" src="./images/telegrama.png" />
+          </Link>
           </div>
         </div>
         <div className="home-code">
@@ -81,13 +74,37 @@ const Home = () => {
           </div>
         </div>
       </div>
+      </Fade>
       <Aboutme />
       <Projects />
       <Contact />
-      <div className="home-flecha" >
+      <div className="home-flecha">
         <Link to="/" onClick={scrol}>
           <img alt="volver al inicio" src="./images/flecha-hacia-arriba.png" />
         </Link>
+      </div>
+      <div className="home-footer">
+        <div className="home-footer-redes">
+          <Link
+            to="https://www.linkedin.com/in/miguel-hilser-39b106122"
+            target="_blank"
+            title="Linkdin"
+          >
+            <img alt="linkdin" src="./images/linkedin.png" />
+          </Link>
+          <Link to="https://github.com/Shirft" target="_blank" title="Git-hub">
+            <img alt="Git-hub" src="./images/github.png" />
+          </Link>
+          <Link to="https://wa.me/1132933986" target="_blank" title="Whatsapp">
+            <img alt="whatsapp" src="./images/whatsapp.png" />
+          </Link>
+          <Link to="https://t.me/MiguelHilser" target="_blank" title="Telegram">
+            <img alt="Telegram" src="./images/telegrama.png" />
+          </Link>
+        </div>
+        <div className="home-footer-text" >
+          <Link to="https://github.com/Shirft/Portfolio" target="_blank"><p>Made by Miguel Hilser</p> </Link>
+        </div>
       </div>
     </div>
   );

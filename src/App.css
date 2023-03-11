@@ -3,10 +3,9 @@
   color: aliceblue;
 }
 .App-header{
-  position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 1;
   transition: top 0.3s; 
 }
 body {
