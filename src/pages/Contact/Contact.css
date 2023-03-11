@@ -36,6 +36,7 @@
     cursor: pointer;
     font-size: 20px;
     font-family: monospace;
+    
 }
 .form-mail button:hover{
     box-shadow: 0 0 5px red, 0 0 15px red;

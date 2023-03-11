@@ -5,6 +5,8 @@ const Curriculum = () => {
         if(typeof window.orientation!= 'undefined'){
             document.getElementById("download").click();
             window.close();
+        }else{
+          document.getElementById("download").style.display='none';
         }
     }
     useEffect(()=>{
