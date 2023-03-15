@@ -2,9 +2,8 @@ header{
     background-color: black;
 }
 .headroom{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    font-weight: 500;
     font-size: large;
     border-radius: 10px;
 }
@@ -67,7 +66,7 @@ header{
     color: gray;
     padding: 50px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 15px;
     font-family: monospace;
 }
 .container li a:hover{
@@ -78,13 +77,15 @@ header{
 .container li a:active{
     text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
     color: gray;
-}/*
-.active{
-    text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red, 0 0 80px red;
 }
-.inactive{
-    color: gray;
-}*/
 .nombre{
     font-family: "Jost", sans-serif;
+}
+
+/*-------------------------- responsive----------------------*/
+@media (width: 375px){
+    .container{
+        width: 375px;
+        
+    }
 }

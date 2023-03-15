@@ -31,8 +31,8 @@ const Home = () => {
         <Navbar />
       </header>
       <div className="home">
-        <Fade right>
-          <div className="home-all" id="Home">
+        <div className="home-all" id="Home">
+          <Fade right>
             <div className="home-container">
               <div className="home-dev">
                 <div className="home-name">{state.name}</div>
@@ -75,6 +75,8 @@ const Home = () => {
                 </Link>
               </div>
             </div>
+          </Fade>
+          <Fade bottom>
             <div className="home-code">
               <div className="home-img">
                 <img alt="Miguel Hilser" src="./images/Imagen1.png" />
@@ -90,8 +92,8 @@ const Home = () => {
                 />
               </div>
             </div>
-          </div>
-        </Fade>
+          </Fade>
+        </div>
         <Aboutme />
         <Projects />
         <Contact />
@@ -102,43 +104,6 @@ const Home = () => {
               src="./images/flecha-hacia-arriba.png"
             />
           </Link>
-        </div>
-        <div className="home-footer">
-          <div className="home-footer-redes">
-            <Link
-              to="https://www.linkedin.com/in/miguel-hilser-39b106122"
-              target="_blank"
-              title="Linkdin"
-            >
-              <img alt="linkdin" src="./images/linkedin.png" />
-            </Link>
-            <Link
-              to="https://github.com/Shirft"
-              target="_blank"
-              title="Git-hub"
-            >
-              <img alt="Git-hub" src="./images/github.png" />
-            </Link>
-            <Link
-              to="https://wa.me/1132933986"
-              target="_blank"
-              title="Whatsapp"
-            >
-              <img alt="whatsapp" src="./images/whatsapp.png" />
-            </Link>
-            <Link
-              to="https://t.me/MiguelHilser"
-              target="_blank"
-              title="Telegram"
-            >
-              <img alt="Telegram" src="./images/telegrama.png" />
-            </Link>
-          </div>
-          <div className="home-footer-text">
-            <Link to="https://github.com/Shirft/Portfolio" target="_blank">
-              <p>Made by Miguel Hilser</p>{" "}
-            </Link>
-          </div>
         </div>
       </div>
     </div>

@@ -14,7 +14,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;*/
-  background-color: black;
+  background: linear-gradient(90deg, black, #701111, black 100%);
+  /*background-color: black;*/
   min-height: 100vh;
   margin: 0;
 }

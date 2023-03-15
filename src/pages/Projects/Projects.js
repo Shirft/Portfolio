@@ -44,7 +44,7 @@ const Projects = () => {
               <div className="projects-project">
                 <h3>{pro.name}</h3>
                 <FolderIcon
-                  sx={{ fontSize: 120, color: "red", paddingLeft: 10 }}
+                  sx={{ fontSize: 120, color: "red", paddingLeft: 0 }}
                 />
                 <Link to={pro.github} target="_blank">
                   Git-Hub

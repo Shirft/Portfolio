@@ -1,6 +1,15 @@
 #Contact{
-    padding: 0 40%;
-    min-height: 75vh;
+    padding: 0% 40%;
+    padding-bottom: 0;
+    min-height: 100vh;
+    background-color: #1B1C1A;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contact-form{
+    padding-top: 20%;
+    padding-bottom: 80%;
 }
 .contact-title-form{
     font-family: "Jost", sans-serif;
@@ -31,7 +40,7 @@
     color: white;
     background-color: red;
     border-radius: 5px;
-    width: 30%;
+    width: 40%;
     margin-top: 2%;
     cursor: pointer;
     font-size: 20px;
@@ -45,3 +54,58 @@
 .form-mail button:active{
     box-shadow: 0 0 5px red;
 }
+
+/*-------------------------- footer----------------------*/
+.home-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1B1C1A;
+  }
+  .home-footer img {
+    background-color: gray;
+    width: 7%;
+    border-radius: 50%;
+    border-style: double;
+    border-width: 1px;
+    border-color: gray;
+    margin: 2% 10px 0 0;
+  }
+  .home-footer-redes{
+    padding-left: 1%;
+  }
+  .home-footer-redes > a > img:hover {
+    box-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
+    background-color: white;
+    border-color: white;
+    transition: 0.5s;
+  }
+  .home-footer-redes > a > img:active{
+    box-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red;
+    background-color: gray;
+    border-color: gray;
+  }
+  .home-footer-text{
+    font-size: 90%;
+    font-family: monospace;
+  }
+  .home-footer-text a{
+    text-decoration: none;
+    color: gray;
+  }
+  .home-footer-text a:hover{
+    text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red;
+    color: white;
+    transition: 0.5s;
+  }
+  .home-footer-text a:active{
+    text-shadow: 0 0 5px red, 0 0 15px red;
+    color: gray;
+  }
+  /*-------------------------- responsive----------------------*/
+  @media (max-width:375px){
+    .home-all{
+      width: 375px;
+      
+    }
+  }

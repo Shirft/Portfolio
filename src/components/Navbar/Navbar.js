@@ -6,19 +6,18 @@ import { Fade } from "@ericcote/react-reveal";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
-const [tern, setTern]=useState('');
-  const match=window.matchMedia('(max-width: 1280px)').matches;
-  const ternario =()=>{
-    if(match){
+  const [tern, setTern] = useState("");
+  const match = window.matchMedia("(max-width: 1280px)").matches;
+  const ternario = () => {
+    if (match) {
       return setTern("_self");
-    }else{
+    } else {
       return setTern("_blank");
     }
-
-  }
-useEffect(()=>{
-  ternario();
-}, [])
+  };
+  useEffect(() => {
+    ternario();
+  }, []);
 
   return (
     <Headroom>

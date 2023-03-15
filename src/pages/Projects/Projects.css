@@ -1,6 +1,6 @@
 #Projects{
     min-height: 80vh;
-    padding: 5% 0;
+    padding: 10% 0;
 }
 #Projects h1{
     padding: 0 0 2% 0;
@@ -17,11 +17,15 @@
     border-width: 0px;
     border-radius: 10px;
     width: 15%;
+    position: relative;
+    align-items: center;
 }
 .projects-project h3{
     font-family: "Jost", sans-serif;
+    font-size: 110%;
 }
 .projects-project:hover{
+    background-color: rgba(54, 52, 52, 0.445);
     box-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
     transition: 0.3s;
 }
@@ -30,7 +34,7 @@
     text-decoration: none;
     color:gray;
     text-align: start;
-    padding: 0 0 5% 10%;
+    padding: 0 0 5% 0%;
     font-family: monospace;
     font-size: large;
 }
@@ -41,4 +45,12 @@
 .projects-project a:active{
     color:gray;
     text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
+}
+
+/*-------------------------- media queries----------------------*/
+@media (max-width:1280px){
+
+    .projects-project h3{
+        font-size: 95%;
+    }
 }

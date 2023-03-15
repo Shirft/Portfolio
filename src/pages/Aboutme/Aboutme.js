@@ -27,8 +27,8 @@ const Aboutme = () => {
   }, []);
 
   return (
-    <Fade left>
-      <section id="Aboutme">
+    <section id="Aboutme">
+      <Fade left>
         <div className="about-section">
           <div className="about-texto">
             <h1>About me</h1>
@@ -56,6 +56,7 @@ const Aboutme = () => {
           <div className="about-mention">
             <p>I mention the technologies that I currently use:</p>
           </div>
+
           <ul className="about-iconos">
             {red.map((icon) => (
               <li className="about-icono" key={icon.name}>
@@ -65,8 +66,8 @@ const Aboutme = () => {
             ))}
           </ul>
         </div>
-      </section>
       </Fade>
+    </section>
   );
 };
 
