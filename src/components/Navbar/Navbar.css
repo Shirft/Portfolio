@@ -3,9 +3,11 @@ header{
 }
 .headroom{
     background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
     color: white;
     font-size: large;
     border-radius: 10px;
+    box-shadow: 0 10px 30px -8px red;
 }
 .headroom--unfixed {
     position: relative;

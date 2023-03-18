@@ -1,6 +1,8 @@
 
+*{
+  max-width: 100%;
+}
 .home-all {
-  /*background-color: black;*/
   border-radius: 10px;
   display: flex;
   flex-direction: row;
@@ -114,9 +116,9 @@
 }
 
 /*-------------------------- flecha nav top----------------------*/
+
 .home-flecha img{
   background-color: gray;
-  width: 2%;
   height: 40px;
   border: 1px solid gray;
   border-radius: 50%;
@@ -162,8 +164,5 @@
 }
 
 /*-------------------------- media querie - flecha nav top----------------------*/
-.home-flecha img{
-  width: 3%;
-}
 
 }

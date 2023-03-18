@@ -1,10 +1,8 @@
 #Aboutme{
     padding: 10% 15%;
     min-height: 80vh;
-    /*background-color: #1B1C1A;*/
 }
 .about-section {
-  width: 100%;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -32,21 +30,31 @@
 }
 .about-iconos {
   display: flex;
-  align-items: end;
-  margin-left: 15%;
-  margin-right: 18%;
   font-family: monospace;
   font-size: 120%;
+  padding-left: 0;
 }
 .about-icono {
+  display: flex;
   list-style-type: none;
+  justify-content: center;
 }
 .about-iconos img {
-  width: 13%;
+  width: 15%;
+  height: 80%;
 }
 /*-------------------------- media queries----------------------*/
 @media (max-width:1280px){
+
 .about-iconos{
   font-size: 105%;
 }
+.about-section{
+  width: 100%;
+}
+.about-iconos img {
+  width: 15%;
+  height: 70%;
+}
+
 }

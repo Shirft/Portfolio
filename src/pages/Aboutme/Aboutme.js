@@ -6,20 +6,20 @@ const Aboutme = () => {
   const [red, setRed] = useState([]);
 
   const Redes = [
-    { icono: "../../images/html5.png", name: " Html 5", alt: "Html5" },
-    { icono: "../../images/css-3.png", name: " Css 3", alt: "Css3" },
+    { icono: "../../images/html5.png", name: "  Html 5", alt: "Html5" },
+    { icono: "../../images/css-3.png", name: "  Css 3", alt: "Css3" },
     {
       icono: "../../images/java-script.png",
-      name: " JavaScript",
+      name: "  JavaScript",
       alt: "JavaScript",
     },
-    { icono: "../../images/react.png", name: " ReactJS", alt: "ReactJs" },
+    { icono: "../../images/react.png", name: "  ReactJS", alt: "ReactJs" },
     {
       icono: "../../images/bootstrap.png",
       name: " Bootstrap",
       alt: "Bootstrap",
     },
-    { icono: "../../images/sass.png", name: " Sass", alt: "Sass" },
+    { icono: "../../images/sass.png", name: "  Sass", alt: "Sass" },
   ];
 
   useEffect(() => {
@@ -61,7 +61,7 @@ const Aboutme = () => {
             {red.map((icon) => (
               <li className="about-icono" key={icon.name}>
                 <img alt={icon.alt} src={icon.icono} />
-                {icon.name}
+                <p> {icon.name}</p>
               </li>
             ))}
           </ul>
