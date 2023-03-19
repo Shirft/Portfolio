@@ -36,7 +36,7 @@
 }
 .home-redes img {
   background-color: gray;
-  width: 4%;
+  width: 40px;
   border-radius: 50%;
   border-style: double;
   border-width: 1px;
@@ -155,7 +155,7 @@
     width: 90%;
   }
  .home-redes img{
-  width: 4%;
+  width: 40px;
  }
 
  /*-------------------------- media querie - cara derecha----------------------*/

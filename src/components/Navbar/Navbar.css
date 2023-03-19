@@ -1,6 +1,4 @@
-header{
-    background-color: black;
-}
+
 .headroom{
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(8px);
@@ -9,6 +7,7 @@ header{
     border-radius: 10px;
     box-shadow: 0 10px 30px -8px red;
 }
+
 .headroom--unfixed {
     position: relative;
     transform: translateY(0);
@@ -83,11 +82,71 @@ header{
 .nombre{
     font-family: "Jost", sans-serif;
 }
+.nav-toggle{
+    display: none;
+}
+
 
 /*-------------------------- responsive----------------------*/
-@media (width: 375px){
-    .container{
-        width: 375px;
+@media (max-width: 768px){
+    .headroom{
+        padding: 2% 0;
+        position: fixed;
+        box-shadow: none;
+        background-color: black;
+        box-shadow: 0 10px 30px -8px red;
+    }
+    .container ul{
+        width: 40%;
+        display: flex;
+        margin-right:0;
+        flex-direction: column;
+        align-items: end;
+        position:absolute;
+        background-color: rgba(0, 0, 0, 0.9);   
+        height: 100vh;
+        top: 80%;
+        transform: translateX(100%);
+        transition: 0.3s ease all;
+    }
+    
+    .container ul>li{
+        margin: 0 auto 20px;
         
+    }
+    .container ul li{
+        margin-top: 20%;
+    }
+    .container ul li a{
+        padding: 0;
+    }
+    .container ul.open{
+        transform: translateX(0);
+    }
+
+    .nav-toggle.open>span{
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+    .nav-toggle.open>span:nth-child(2){
+        display: none;
+    }
+    .nav-toggle.open> span:nth-child(3){
+        transform: rotate(-45deg) translate(-9px, 5px);
+    }
+    .nav-toggle{
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+        top: 60px;
+        left: 0;
+    }
+    .nav-toggle span{
+        width: 38px;
+        height: 4px;
+        background: gray;
+        border-radius: 2px;
+        margin-bottom: 5px;
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
     }
 }
