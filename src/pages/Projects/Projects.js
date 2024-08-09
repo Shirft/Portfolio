@@ -12,7 +12,7 @@ const Projects = () => {
       name: "Dessins-art(Static page)",
       image: "",
       github: "https://github.com/Shirft/DessinsArt",
-      web: "https://dessins-art.000webhostapp.com/",
+      web: "https://shirft.github.io/DessinsArt/",
     },
     {
       id: 2,

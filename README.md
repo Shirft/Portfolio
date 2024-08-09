@@ -1,1 +1,3 @@
-#Commands
+Commands
+*npm-init
+*
