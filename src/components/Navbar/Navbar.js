@@ -35,7 +35,7 @@ const Navbar = () => {
   }, []);
 
   useEffect(()=>{
-    if(isOpen==true){
+    if(isOpen===true){
      document.querySelector(".home").style="filter: blur(8px);";
      document.querySelector("body").style="overflow: hidden;";
     }else{
