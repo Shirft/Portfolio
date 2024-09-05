@@ -1,3 +1,1 @@
-Commands
-*npm-init
-*
+En corrección :D
